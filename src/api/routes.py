@@ -36,7 +36,18 @@ def handle_hello():
 
 @api.route('/productos')
 def get_productos():
-    tabla = DBF('/workspaces/fs-pt-100-ruben-pruebaJuegos/src/front/assets/articulo.dbf', encoding='latin1')
+    tabla = DBF('/workspaces/react-flask-hello/src/front/assets/img/articulo.dbf', encoding='latin1')
     productos = [dict(row) for row in tabla]
     return jsonify(productos)
 
+@api.route('/colores')
+def get_colors():
+    tabla = DBF('/workspaces/react-flask-hello/src/front/assets/img/colores.dbf', encoding='latin1')
+    productos = [dict(row) for row in tabla]
+    return jsonify(productos)
+
+@api.route('/tallas')
+def get_tallas():
+    tabla = DBF('/workspaces/react-flask-hello/src/front/assets/img/tallajes.dbf', encoding='latin1')
+    productos = [dict(row) for row in tabla]
+    return jsonify(productos)
