@@ -51,3 +51,9 @@ def get_tallas():
     tabla = DBF('/workspaces/react-flask-hello/src/front/assets/img/tallajes.dbf', encoding='latin1')
     productos = [dict(row) for row in tabla]
     return jsonify(productos)
+
+@api.route('/prueba')
+def get_prueba():
+    tabla = DBF('/workspaces/react-flask-hello/src/front/assets/img/pathconfig.dbf', encoding='latin1')
+    productos = [dict(row) for row in tabla]
+    return jsonify(productos)
