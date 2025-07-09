@@ -5,12 +5,24 @@ from flask import Flask, request, jsonify, url_for, Blueprint
 from api.models import db, User
 from api.utils import generate_sitemap, APIException
 from flask_cors import CORS
+from dbfread import DBF
+# import os
+
+# ruta = '/Users/rubencabellomiguel/Downloads/datos/almacen.dbf'
+# print(f"Existe archivo: {os.path.isfile(ruta)}")
+
+# tabla = DBF(ruta, encoding='latin1')
+# for row in tabla:
+#     print(row)
+#     break  # solo para ver la primera fila
+
+
+
 
 api = Blueprint('api', __name__)
 
 # Allow CORS requests to this API
-CORS(api)
-
+# CORS(api)
 
 @api.route('/hello', methods=['POST', 'GET'])
 def handle_hello():
@@ -20,3 +32,11 @@ def handle_hello():
     }
 
     return jsonify(response_body), 200
+
+
+@api.route('/productos')
+def get_productos():
+    tabla = DBF('/workspaces/fs-pt-100-ruben-pruebaJuegos/src/front/assets/inventariol.dbf', encoding='latin1')
+    productos = [dict(row) for row in tabla]
+    return jsonify(productos)
+
