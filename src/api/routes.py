@@ -53,13 +53,19 @@ def get_tallas():
     return jsonify(productos)
 
 @api.route('/factura')
-def get_prueba():
+def get_factura():
     tabla = DBF('/workspaces/react-flask-hello/src/front/assets/img/factural.dbf', encoding='latin1')
     productos = [dict(row) for row in tabla]
     return jsonify(productos)
 
 @api.route('/familia')
-def get_prueba2():
+def get_familia():
     tabla = DBF('/workspaces/react-flask-hello/src/front/assets/img/familias.dbf', encoding='latin1')
+    productos = [dict(row) for row in tabla]
+    return jsonify(productos)
+
+@api.route('/prueba')
+def get_prueba():
+    tabla = DBF('/workspaces/react-flask-hello/src/front/assets/img/proveedo.dbf', encoding='latin1')
     productos = [dict(row) for row in tabla]
     return jsonify(productos)
