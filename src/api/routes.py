@@ -112,3 +112,14 @@ def get_prueba():
     productos = [dict(row) for row in tabla]
     return jsonify(productos)
 
+
+
+@api.route('/movalm', methods=['GET'])
+def get_movalm():
+    try:
+        tabla = DBF('/workspaces/react-flask-hello/src/front/assets/img/movalm.dbf', encoding='latin1')
+        registros = [dict(row) for row in tabla]
+        return jsonify(registros), 200
+    except Exception as e:
+        return jsonify({'error': str(e)}), 500
+
