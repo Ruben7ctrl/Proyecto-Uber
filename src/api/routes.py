@@ -5,19 +5,6 @@ from flask import Flask, request, jsonify, url_for, Blueprint
 from api.models import db, User, Imagen
 from api.utils import generate_sitemap, APIException
 from flask_cors import CORS
-from dbfread import DBF
-import os
-
-# ruta = '/Users/rubencabellomiguel/Downloads/datos/almacen.dbf'
-# print(f"Existe archivo: {os.path.isfile(ruta)}")
-
-# tabla = DBF(ruta, encoding='latin1')
-# for row in tabla:
-#     print(row)
-#     break  # solo para ver la primera fila
-
-UPLOAD_FOLDER = 'static/uploads'
-ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
 
 api = Blueprint('api', __name__)
 
