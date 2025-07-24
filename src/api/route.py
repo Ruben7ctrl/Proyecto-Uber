@@ -18,7 +18,7 @@ from api.routes.notifications import notifications_bp
 from api.routes.payment import payment_bp
 from api.routes.places import places_bp
 from api.routes.ride import ride_bp
-from .routes.users import users_bp
+from api.routes.users import users_bp
 
 
 api = Blueprint('api', __name__)
