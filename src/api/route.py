@@ -19,7 +19,8 @@ from api.routes.payment import payment_bp
 from api.routes.places import places_bp
 from api.routes.ride import ride_bp
 from api.routes.users import users_bp
-
+from api.routes.admin_customers import admin_customers_bp
+from api.routes.admin_drivers import admin_drivers_bp
 
 api = Blueprint('api', __name__)
 api.register_blueprint(admin_bp)
@@ -36,6 +37,8 @@ api.register_blueprint(payment_bp)
 api.register_blueprint(places_bp)
 api.register_blueprint(ride_bp)
 api.register_blueprint(users_bp)
+api.register_blueprint(admin_customers_bp)
+api.register_blueprint(admin_drivers_bp)
 
 
 # Allow CORS requests to this API

@@ -1,0 +1,43 @@
+{
+    "legs": [
+        {
+            "distance": { "text": "2,7 km", "value": 2670 },
+            "duration": { "text": "11 min", "value": 663 },
+            "end_address": "Pl. del Callao, Centro, 28013 Madrid, España",
+            "end_location": { "lat": 40.4202897, "lng": -3.7058325 },
+            "start_address": "Prta del Sol, Centro, Madrid, España",
+            "start_location": { "lat": 40.4166199, "lng": -3.7043412 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        },
+        {
+            "distance": { "text": "3,1 km", "value": 3131 },
+            "duration": { "text": "10 min", "value": 629 },
+            "end_address": "Plaza de Chamberí, Chamberí, 28010 Madrid, España",
+            "end_location": { "lat": 40.4324185, "lng": -3.6972361 },
+            "start_address": "Pl. del Callao, Centro, 28013 Madrid, España",
+            "start_location": { "lat": 40.4202897, "lng": -3.7058325 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        }
+    ],
+    "userInput": {
+        "pickup": {
+            "id": "EiVQbGF6YSBQdWVydGEgZGVsIFNvbCwgTWFkcmlkLCBFc3Bhw7FhIi4qLAoUChIJE5ElGX4oQg0Rl34l2zxC5JkSFAoSCYE8CoCXKUINEWkijGHB3jbE",
+            "description": "Plaza Puerta del Sol, Madrid, España"
+        },
+        "parada": {
+            "id": "EiFQbGF6YSBkZWwgQ2FsbGFvLCBNYWRyaWQsIEVzcGHDsWEiLiosChQKEgnrkWRRfChCDRFMefcemZE_pRIUChIJgTwKgJcpQg0RaSKMYcHeNsQ",
+            "description": "Plaza del Callao, Madrid, España"
+        },
+        "destination": {
+            "id": "EiNQbGF6YSBkZSBDaGFtYmVyw60sIE1hZHJpZCwgRXNwYcOxYSIuKiwKFAoSCZEvsrqMKEINEbgnzp1loilvEhQKEgmBPAqAlylCDRFpIoxhwd42xA",
+            "description": "Plaza de Chamberí, Madrid, España"
+        }
+    },
+    "user_id": 5
+}

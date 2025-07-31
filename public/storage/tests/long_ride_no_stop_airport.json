@@ -1,0 +1,28 @@
+{
+    "legs": [
+        {
+            "distance": { "text": "34,3 km", "value": 34313 },
+            "duration": { "text": "28 min", "value": 1657 },
+            "end_address": "Aeropuerto, Barajas, 28042 Madrid, España",
+            "end_location": { "lat": 40.4528719, "lng": -3.580664 },
+            "start_address": "Av. de Madrid, Valdemoro, Madrid, España",
+            "start_location": { "lat": 40.2089194, "lng": -3.6844029 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        }
+    ],
+    "userInput": {
+        "pickup": {
+            "id": "EiFBdmVuaWRhIGRlIE1hZHJpZCwgUGludG8sIEVzcGHDsWEiLiosChQKEgnrN77w4B5CDRF2V791d3gWCBIUChIJybWc634fQg0R4QAcQ225BA8",
+            "description": "Avenida de Madrid, Pinto, España"
+        },
+        "parada": {},
+        "destination": {
+            "id": "EiNBZXJvcHVlcnRvIEJhcmFqYXMsIE1hZHJpZCwgRXNwYcOxYSIuKiwKFAoSCUGWjp0NLkINEftlAW-C1pNcEhQKEgmBPAqAlylCDRFpIoxhwd42xA",
+            "description": "Aeropuerto Barajas, Madrid, España"
+        }
+    },
+    "user_id": 5
+}

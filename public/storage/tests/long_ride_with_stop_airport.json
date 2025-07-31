@@ -1,0 +1,43 @@
+{
+    "legs": [
+        {
+            "distance": { "text": "20,7 km", "value": 20689 },
+            "duration": { "text": "24 min", "value": 1421 },
+            "end_address": "Prta del Sol, Centro, Madrid, España",
+            "end_location": { "lat": 40.4166199, "lng": -3.7043412 },
+            "start_address": "Aeropuerto, Barajas, 28042 Madrid, España",
+            "start_location": { "lat": 40.4528719, "lng": -3.580664 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        },
+        {
+            "distance": { "text": "26,4 km", "value": 26405 },
+            "duration": { "text": "30 min", "value": 1814 },
+            "end_address": "Av. de Madrid, Valdemoro, Madrid, España",
+            "end_location": { "lat": 40.2089194, "lng": -3.6844029 },
+            "start_address": "Prta del Sol, Centro, Madrid, España",
+            "start_location": { "lat": 40.4166199, "lng": -3.7043412 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        }
+    ],
+    "userInput": {
+        "pickup": {
+            "id": "EiNBZXJvcHVlcnRvIEJhcmFqYXMsIE1hZHJpZCwgRXNwYcOxYSIuKiwKFAoSCUGWjp0NLkINEftlAW-C1pNcEhQKEgmBPAqAlylCDRFpIoxhwd42xA",
+            "description": "Aeropuerto Barajas, Madrid, España"
+        },
+        "parada": {
+            "id": "Eh9QdWVydGEgZGVsIFNvbCwgTWFkcmlkLCBFc3Bhw7FhIi4qLAoUChIJE5ElGX4oQg0Rl34l2zxC5JkSFAoSCYE8CoCXKUINEWkijGHB3jbE",
+            "description": "Puerta del Sol, Madrid, España"
+        },
+        "destination": {
+            "id": "EiFBdmVuaWRhIGRlIE1hZHJpZCwgUGludG8sIEVzcGHDsWEiLiosChQKEgnrN77w4B5CDRF2V791d3gWCBIUChIJybWc634fQg0R4QAcQ225BA8",
+            "description": "Avenida de Madrid, Pinto, España"
+        }
+    },
+    "user_id": 5
+}
