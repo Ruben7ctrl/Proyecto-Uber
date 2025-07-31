@@ -1,0 +1,43 @@
+{
+    "legs": [
+        {
+            "distance": { "text": "61,3 km", "value": 61283 },
+            "duration": { "text": "43 min", "value": 2589 },
+            "end_address": "C. Prta del Sol, 28110 Algete, Madrid, España",
+            "end_location": { "lat": 40.595842, "lng": -3.4971898 },
+            "start_address": "Av. de Madrid, Valdemoro, Madrid, España",
+            "start_location": { "lat": 40.2089194, "lng": -3.6844029 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        },
+        {
+            "distance": { "text": "40,3 km", "value": 40293 },
+            "duration": { "text": "42 min", "value": 2491 },
+            "end_address": "Prta del Sol, Centro, Madrid, España",
+            "end_location": { "lat": 40.4166199, "lng": -3.7043412 },
+            "start_address": "C. Prta del Sol, 28110 Algete, Madrid, España",
+            "start_location": { "lat": 40.595842, "lng": -3.4971898 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        }
+    ],
+    "userInput": {
+        "pickup": {
+            "id": "EiFBdmVuaWRhIGRlIE1hZHJpZCwgUGludG8sIEVzcGHDsWEiLiosChQKEgnrN77w4B5CDRF2V791d3gWCBIUChIJybWc634fQg0R4QAcQ225BA8",
+            "description": "Avenida de Madrid, Pinto, España"
+        },
+        "parada": {
+            "id": "EiVDYWxsZSBQdWVydGEgZGVsIFNvbCwgQWxnZXRlLCBFc3Bhw7FhIi4qLAoUChIJ5yupGVnLQw0R1fW0AFqo0uQSFAoSCfvlgV2nzEMNEYchFzjvkQKs",
+            "description": "Calle Puerta del Sol, Algete, España"
+        },
+        "destination": {
+            "id": "Eh9QdWVydGEgZGVsIFNvbCwgTWFkcmlkLCBFc3Bhw7FhIi4qLAoUChIJE5ElGX4oQg0Rl34l2zxC5JkSFAoSCYE8CoCXKUINEWkijGHB3jbE",
+            "description": "Puerta del Sol, Madrid, España"
+        }
+    },
+    "user_id": 5
+}

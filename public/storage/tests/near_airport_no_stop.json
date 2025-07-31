@@ -1,0 +1,28 @@
+{
+    "legs": [
+        {
+            "distance": { "text": "10,4 km", "value": 10366 },
+            "duration": { "text": "11 min", "value": 667 },
+            "end_address": "C. de Torrejón, 28850 Torrejón de Ardoz, Madrid, España",
+            "end_location": { "lat": 40.4574801, "lng": -3.4869048 },
+            "start_address": "Aeropuerto, Barajas, 28042 Madrid, España",
+            "start_location": { "lat": 40.4528719, "lng": -3.580664 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        }
+    ],
+    "userInput": {
+        "pickup": {
+            "id": "EiNBZXJvcHVlcnRvIEJhcmFqYXMsIE1hZHJpZCwgRXNwYcOxYSIuKiwKFAoSCUGWjp0NLkINEftlAW-C1pNcEhQKEgmBPAqAlylCDRFpIoxhwd42xA",
+            "description": "Aeropuerto Barajas, Madrid, España"
+        },
+        "parada": {},
+        "destination": {
+            "id": "Ei9DYWxsZSBkZSBUb3JyZWrDs24sIFRvcnJlasOzbiBkZSBBcmRveiwgRXNwYcOxYSIuKiwKFAoSCQkNZuMmN0INEZrLIarff6gxEhQKEgm3Zl6XGzdCDRGOrRD1PlAXSQ",
+            "description": "Calle de Torrejón, Torrejón de Ardoz, España"
+        }
+    },
+    "user_id": 5
+}

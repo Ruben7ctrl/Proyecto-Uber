@@ -1,0 +1,28 @@
+{
+    "legs": [
+        {
+            "distance": { "text": "5,5 km", "value": 5512 },
+            "duration": { "text": "19 min", "value": 1142 },
+            "end_address": "Plaza de Chamberí, Chamberí, 28010 Madrid, España",
+            "end_location": { "lat": 40.4324185, "lng": -3.6972361 },
+            "start_address": "Prta del Sol, Centro, Madrid, España",
+            "start_location": { "lat": 40.4166199, "lng": -3.7043412 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        }
+    ],
+    "userInput": {
+        "pickup": {
+            "id": "Eh9QdWVydGEgZGVsIFNvbCwgTWFkcmlkLCBFc3Bhw7FhIi4qLAoUChIJE5ElGX4oQg0Rl34l2zxC5JkSFAoSCYE8CoCXKUINEWkijGHB3jbE",
+            "description": "Puerta del Sol, Madrid, España"
+        },
+        "parada": {},
+        "destination": {
+            "id": "EiNQbGF6YSBkZSBDaGFtYmVyw60sIE1hZHJpZCwgRXNwYcOxYSIuKiwKFAoSCZEvsrqMKEINEbgnzp1loilvEhQKEgmBPAqAlylCDRFpIoxhwd42xA",
+            "description": "Plaza de Chamberí, Madrid, España"
+        }
+    },
+    "user_id": 5
+}

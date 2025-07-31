@@ -1,0 +1,43 @@
+{
+    "legs": [
+        {
+            "distance": { "text": "4,4 km", "value": 4446 },
+            "duration": { "text": "10 min", "value": 591 },
+            "end_address": "Aeropuerto, Barajas, 28042 Madrid, España",
+            "end_location": { "lat": 40.4528719, "lng": -3.580664 },
+            "start_address": "C. Basella, Barajas, 28042 Madrid, España",
+            "start_location": { "lat": 40.4642346, "lng": -3.5890411 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        },
+        {
+            "distance": { "text": "4,9 km", "value": 4852 },
+            "duration": { "text": "7 min", "value": 443 },
+            "end_address": "C. Basella, Barajas, 28042 Madrid, España",
+            "end_location": { "lat": 40.4642346, "lng": -3.5890411 },
+            "start_address": "Aeropuerto, Barajas, 28042 Madrid, España",
+            "start_location": { "lat": 40.4528719, "lng": -3.580664 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        }
+    ],
+    "userInput": {
+        "pickup": {
+            "id": "EidDYWxsZSBCYXNlbGxhLCBCYXJhamFzLCBNYWRyaWQsIEVzcGHDsWEiLiosChQKEglL839XLi5CDRFAatjbVIcZaxIUChIJ-4yAzOAxQg0R6ty2Gn22jUk",
+            "description": "Calle Basella, Barajas, Madrid, España"
+        },
+        "parada": {
+            "id": "EiNBZXJvcHVlcnRvIEJhcmFqYXMsIE1hZHJpZCwgRXNwYcOxYSIuKiwKFAoSCUGWjp0NLkINEftlAW-C1pNcEhQKEgmBPAqAlylCDRFpIoxhwd42xA",
+            "description": "Aeropuerto Barajas, Madrid, España"
+        },
+        "destination": {
+            "id": "EidDYWxsZSBCYXNlbGxhLCBCYXJhamFzLCBNYWRyaWQsIEVzcGHDsWEiLiosChQKEglL839XLi5CDRFAatjbVIcZaxIUChIJ-4yAzOAxQg0R6ty2Gn22jUk",
+            "description": "Calle Basella, Barajas, Madrid, España"
+        }
+    },
+    "user_id": 5
+}

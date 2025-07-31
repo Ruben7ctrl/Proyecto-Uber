@@ -1,0 +1,28 @@
+{
+    "legs": [
+        {
+            "distance": { "text": "22,2 km", "value": 22198 },
+            "duration": { "text": "30 min", "value": 1826 },
+            "end_address": "Prta del Sol, Centro, Madrid, España",
+            "end_location": { "lat": 40.4166199, "lng": -3.7043412 },
+            "start_address": "Cam. de Getafe a Pinto, 28320 Pinto, Madrid, España",
+            "start_location": { "lat": 40.2645489, "lng": -3.7158319 },
+            "steps": null,
+            "traffic_speed_entry": [],
+            "via_waypoint": [],
+            "via_waypoints": []
+        }
+    ],
+    "userInput": {
+        "pickup": {
+            "id": "EihDYW1pbm8gZGUgR2V0YWZlIGEgUGludG8sIFBpbnRvLCBFc3Bhw7FhIi4qLAoUChIJO0UuDTAgQg0Rqe5Lqyw0FAMSFAoSCcm1nOt-H0INEeEAHENtuQQP",
+            "description": "Camino de Getafe a Pinto, Pinto, España"
+        },
+        "parada": {},
+        "destination": {
+            "id": "Eh9QdWVydGEgZGVsIFNvbCwgTWFkcmlkLCBFc3Bhw7FhIi4qLAoUChIJE5ElGX4oQg0Rl34l2zxC5JkSFAoSCYE8CoCXKUINEWkijGHB3jbE",
+            "description": "Puerta del Sol, Madrid, España"
+        }
+    },
+    "user_id": 5
+}
