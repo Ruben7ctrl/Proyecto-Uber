@@ -380,6 +380,28 @@ class DriverDocument(db.Model):
             "uploaded_at": self.uploaded_at.isoformat() if self.uploaded_at else None
         }
 
+class UserImage(db.Model):
+    __tablename__ = 'user_images'
+
+    id: Mapped[int] = mapped_column(primary_key=True)
+    user_id: Mapped[int] = mapped_column(
+        ForeignKey('users.id'), nullable=False)
+    image_type: Mapped[str] = mapped_column(String(100), nullable=False)
+    image_url: Mapped[str] = mapped_column(String(255), nullable=False)
+    uploaded_at: Mapped[datetime] = mapped_column(
+        DateTime, default=datetime.utcnow)
+
+    user: Mapped["User"] = relationship("User")
+
+    def serialize(self):
+        return {
+            "id": self.id,
+            "user_id": self.user_id,
+            "image_type": self.image_type,
+            "image_url": self.image_url,
+            "uploaded_at": self.uploaded_at.isoformat() if self.uploaded_at else None,
+        }
+
 # =========================================================
 # MODELOS DE VEHÍCULOS
 # =========================================================

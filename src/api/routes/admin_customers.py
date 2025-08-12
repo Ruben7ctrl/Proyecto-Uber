@@ -3,7 +3,7 @@ from werkzeug.utils import secure_filename
 import os
 import re
 from flask_jwt_extended import jwt_required
-from .models.user import db, Customer, User
+from .models2.user import db, Customer, User
 # asumo que tienes este decorador para control de roles
 from .utils.decorators import admin_required
 

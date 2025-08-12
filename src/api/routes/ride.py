@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
 from datetime import datetime
 from .. import db
-from ..models import Ride, User  # Asegúrate de tener estos modelos
+from api.models2 import Ride, User  # Asegúrate de tener estos modelos
 from api.auth import token_required
 
 ride_bp = Blueprint("ride_bp", __name__, url_prefix="/rides")

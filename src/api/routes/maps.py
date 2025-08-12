@@ -3,9 +3,9 @@ import os
 import requests
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import jwt_required
-from yourapp.models import City, User, VehicleCategory, RideExtra, Setting, db
-from yourapp.schemas import VehicleCategorySchema  # Ajusta según tu estructura
-from yourapp.utils.google_maps import (
+from api.models import City, User, VehicleCategory, RideExtra, Setting, db
+from api.schemas import VehicleCategorySchema  # Ajusta según tu estructura
+from api.utils.google_maps import (
     get_lat_lng_from_place_id,
     check_if_airport
 )

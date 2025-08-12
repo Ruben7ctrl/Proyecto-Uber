@@ -1,7 +1,7 @@
 
 import os
 from flask_admin import Admin
-from .models import db, User, VehicleBrand, VehicleCategory, VehicleColor, VehicleModel, Vehicle
+from .models2 import db, User, VehicleBrand, VehicleCategory, VehicleColor, VehicleModel, Vehicle
 from flask_admin.contrib.sqla import ModelView
 from .admin_views import VehicleBrandAdmin, VehicleCategoryAdmin, VehicleColorAdmin, VehicleModelAdmin, VehicleAdmin
 

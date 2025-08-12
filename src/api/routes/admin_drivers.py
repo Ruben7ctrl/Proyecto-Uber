@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import jwt_required
-from api.models import Driver
+from api.models2 import Driver
 from api.schemas.driver import DriverCreateSchema, DriverUpdateSchema
 from api.services.driver_service import create_driver, update_driver, delete_driver
 from api.utils.decorators import admin_required

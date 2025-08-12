@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify, abort
-from app.models import db, Vehicle
-from app.schemas.vehicle_schemas import VehicleSchema
+from api.models2 import db, Vehicle
+from api.schemas.vehicle_schemas import VehicleSchema
 
 vehicles_bp = Blueprint('vehicles_bp', __name__, url_prefix='/api/vehicles')
 

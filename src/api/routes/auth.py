@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify, render_template, redirect, url_for, flash
 from werkzeug.security import generate_password_hash, check_password_hash
-from api.models import db, User
+from api.models2 import db, User
 from api.utils.jwt_handler import create_token, decode_token
 from functools import wraps
 from jwt import ExpiredSignatureError, InvalidTokenError

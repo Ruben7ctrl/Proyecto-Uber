@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from api import db
-from api.models import User, Role
+from api.models2 import User, Role
 
 admin_users_bp = Blueprint("admin_users_bp", __name__,
                            url_prefix="/admin/users")

@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from api.models import db, Setting
+from api.models2 import db, Setting
 from api.schemas.setting import SettingCreateSchema, SettingUpdateSchema
 from flask_jwt_extended import jwt_required
 from api.utils.decorators import admin_required

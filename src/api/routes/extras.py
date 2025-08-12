@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from api import db
-from api.models import Extra
+from api.models2 import Extra
 
 extras_bp = Blueprint("extras_bp", __name__, url_prefix='/extras')
 

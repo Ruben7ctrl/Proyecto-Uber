@@ -1,5 +1,5 @@
 from flask import Blueprint, jsonify, request
-from api.models import db, Transaction, User
+from api.models2 import db, Transaction, User
 from sqlalchemy.exc import SQLAlchemyError
 
 balance_bp = Blueprint("balance_bp", __name__, url_prefix='/balance')

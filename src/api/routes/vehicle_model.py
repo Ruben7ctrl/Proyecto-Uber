@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
-from ..models import db, VehicleModel
-from ..schemas import VehicleModelSchema
+from api.models2 import db, VehicleModel
+from api.schemas import VehicleModelSchema
 
 vehicle_model_bp = Blueprint(
     'vehicle_model_bp', __name__, url_prefix='/api/vehicle-models')
