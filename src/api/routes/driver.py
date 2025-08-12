@@ -1,7 +1,8 @@
 from flask import Blueprint, request, jsonify
-from api.models2 import db
+
+from sqlalchemy import func
+from api.models2 import db, Driver, Ride, Transaction
 from api.utils.jwt_handler import token_required
-from api.models2 import Driver  # o User si aún no has separado Driver como clase hija
 
 driver_bp = Blueprint("driver", __name__)
 
@@ -32,3 +33,32 @@ def change_status(current_user):
         },
         "message": "Success"
     }), 200
+
+
+@driver_bp.route("/stats", methods=["GET"])
+@token_required
+def driver_stats(current_user):
+    """Return basic statistics for the authenticated driver."""
+    if current_user.role != "driver":
+        return jsonify({"error": "Only drivers can view stats"}), 403
+
+    rides = Ride.query.filter_by(driver_id=current_user.id).all()
+    total_rides = len(rides)
+
+    total_revenue = (
+        db.session.query(func.sum(Transaction.amount))
+        .join(Ride, Transaction.ride_id == Ride.id)
+        .filter(Ride.driver_id == current_user.id, Transaction.type == "payment")
+        .scalar()
+        or 0.0
+    )
+
+    estimated_hours = total_rides * 1.5
+
+    return jsonify(
+        {
+            "total_rides": total_rides,
+            "estimated_hours": estimated_hours,
+            "total_revenue": total_revenue,
+        }
+    ), 200
