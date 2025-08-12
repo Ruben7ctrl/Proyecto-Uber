@@ -1,13 +1,13 @@
 from marshmallow_sqlalchemy import SQLAlchemyAutoSchema, auto_field
 from marshmallow import validates, ValidationError
-from ..models import (
+from api.models2 import (
     VehicleBrand,
     VehicleModel,
     VehicleColor,
     VehicleCategory,
     Vehicle,
 )
-from ..models import db
+from api.models2 import db
 
 # VehicleBrand Schema
 

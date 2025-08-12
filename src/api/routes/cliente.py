@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from sqlalchemy.orm import joinedload
-from app.models import db, Ride, RideExtra, Setting, User
+from app.models2 import db, Ride, RideExtra, Setting, User
 from app.schemas.ride_schema import RideSchema
 from app.utils.email_utils import send_service_inquiry_email
 from app.utils.google_maps import get_lat_lng_from_place_id

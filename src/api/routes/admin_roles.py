@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import jwt_required
-from api.models import Role, Permission, db
+from api.models2 import Role, Permission, db
 from api.schemas.role import RoleCreateSchema, RoleUpdateSchema
 from api.utils.decorators import admin_required
 

@@ -1,7 +1,7 @@
 import os
 from flask import Blueprint, request, jsonify
 from werkzeug.utils import secure_filename
-from api.models import db, DriverDocument
+from api.models2 import db, DriverDocument
 
 documents_bp = Blueprint("documents_bp", __name__, url_prefix='/documents')
 

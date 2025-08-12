@@ -1,7 +1,7 @@
 from flask import Blueprint, request, jsonify
-from api.models import db
+from api.models2 import db
 from api.utils.jwt_handler import token_required
-from api.models import Driver  # o User si aún no has separado Driver como clase hija
+from api.models2 import Driver  # o User si aún no has separado Driver como clase hija
 
 driver_bp = Blueprint("driver", __name__)
 

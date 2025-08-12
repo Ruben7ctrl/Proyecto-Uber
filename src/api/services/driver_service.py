@@ -1,4 +1,4 @@
-from api.models import db, Driver, User, Vehicle
+from api.models2 import db, Driver, User, Vehicle
 from werkzeug.security import generate_password_hash
 
 

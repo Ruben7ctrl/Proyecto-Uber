@@ -1,14 +1,12 @@
 import os
 from flask import Blueprint, request, jsonify
 from werkzeug.utils import secure_filename
-from api import db
-from api.models import UserImage
+from api.models2 import db, UserImage
 
 images_bp = Blueprint("images_bp", __name__, url_prefix='/images')
 
 UPLOAD_FOLDER = "uploads/images"
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-
 
 @images_bp.route("/upload", methods=["POST"])
 def upload_image():

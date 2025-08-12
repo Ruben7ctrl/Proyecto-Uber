@@ -1,7 +1,7 @@
 # /api/routes/admin.py
 from flask import Blueprint, jsonify
 from flask_jwt_extended import jwt_required, get_jwt_identity
-from api.models import db, User, Ride
+from api.models2 import db, User, Ride
 
 admin_bp = Blueprint("admin", __name__, url_prefix="/admin")
 

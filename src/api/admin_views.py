@@ -3,7 +3,7 @@ from wtforms import validators
 from flask_admin.form import ImageUploadField
 import os
 from flask_admin import Admin
-from .models import db, User, VehicleBrand, VehicleCategory, VehicleColor, VehicleModel
+from .models2 import db, User, VehicleBrand, VehicleCategory, VehicleColor, VehicleModel
 from wtforms.fields import SelectField
 
 

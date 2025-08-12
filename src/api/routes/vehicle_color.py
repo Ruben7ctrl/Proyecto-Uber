@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
-from ..models import db, VehicleColor
-from ..schemas import VehicleColorSchema
+from api.models2 import db, VehicleColor
+from api.schemas import VehicleColorSchema
 
 vehicle_color_bp = Blueprint(
     'vehicle_color_bp', __name__, url_prefix='/api/vehicle-colors')

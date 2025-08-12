@@ -1,5 +1,5 @@
 from marshmallow_sqlalchemy import SQLAlchemyAutoSchema
-from app.models import Ride
+from api.models2 import Ride
 
 
 class RideSchema(SQLAlchemyAutoSchema):
