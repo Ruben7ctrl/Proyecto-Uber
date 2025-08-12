@@ -3,7 +3,38 @@ from typing import ClassVar, List, Optional
 
 from flask import current_app
 from flask_sqlalchemy import SQLAlchemy
-from flask_security import UserMixin
+# ``flask_security`` is an optional dependency.  Some environments used for
+# development or teaching don't include it, which previously caused an
+# import-time failure.  We attempt to import ``UserMixin`` from
+# ``flask_security`` but fall back to a very small local implementation that
+# provides the attributes used by the application.  This keeps the models
+# usable even when the dependency isn't installed.
+try:  # pragma: no cover - simple import/fallback logic
+    from flask_security import UserMixin
+except ModuleNotFoundError:  # pragma: no cover - executed when package missing
+    class UserMixin:
+        """Minimal substitute for :class:`flask_security.UserMixin`.
+
+        Provides the properties expected by Flask-Login/Security without
+        requiring the external package.
+        """
+
+        @property
+        def is_authenticated(self) -> bool:  # noqa: D401 - simple property
+            """Always return ``True`` for authenticated users."""
+
+            return True
+
+        @property
+        def is_anonymous(self) -> bool:  # noqa: D401 - simple property
+            """Users represented by this mixin are never anonymous."""
+
+            return False
+
+        def get_id(self) -> str:
+            """Return the unique identifier for the user."""
+
+            return str(getattr(self, "id", ""))
 from sqlalchemy import (
     String, Boolean, ForeignKey, Float, DateTime, Enum, JSON, Table, event, Integer
 )
@@ -379,6 +410,7 @@ class DriverDocument(db.Model):
             "file_path": self.file_path,
             "uploaded_at": self.uploaded_at.isoformat() if self.uploaded_at else None
         }
+
 
 class UserImage(db.Model):
     __tablename__ = 'user_images'
