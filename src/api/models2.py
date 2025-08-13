@@ -35,17 +35,8 @@ except ModuleNotFoundError:  # pragma: no cover - executed when package missing
             """Return the unique identifier for the user."""
 
             return str(getattr(self, "id", ""))
-from sqlalchemy import (
-    String,
-    Boolean,
-    ForeignKey,
-    Float,
-    DateTime,
-    Enum,
-    JSON,
-    event,
-    Integer,
-)
+from sqlalchemy import (String, Boolean, ForeignKey, Float, DateTime, Enum, JSON, event, Integer, Column, Numeric,
+                        )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 import os
 import hashlib
@@ -499,12 +490,13 @@ class VehicleColor(db.Model):
 class VehicleCategory(db.Model):
     __tablename__ = 'vehicle_categories'
 
-    id = Column(Integer, primary_key=True)
-    img = Column(String(255), nullable=True)
-    name = Column(String(255), nullable=False)
-    rate = Column(Numeric(10, 2), nullable=False)
-    min_rate = Column(Numeric(10, 2), nullable=True)
-    airport_min_rate = Column(Numeric(10, 2), nullable=True)
+    id: Mapped[int] = mapped_column(primary_key=True)
+    img: Mapped[Optional(str)] = mapped_column(String(255), nullable=True)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    rate: Mapped[int] = mapped_column(Numeric(10, 2), nullable=False)
+    min_rate: Mapped[int] = mapped_column(Numeric(10, 2), nullable=True)
+    airport_min_rate: Mapped[int] = mapped_column(
+        Numeric(10, 2), nullable=True)
 
     vehicles: Mapped[List["Vehicle"]] = relationship(
         "Vehicle", back_populates="category")
