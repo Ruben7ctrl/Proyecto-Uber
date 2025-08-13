@@ -22,6 +22,7 @@ flask = "*"
 mariadb = "*"
 sqlalchemy = "*"
 flask-sqlalchemy = "*"
+mailchimp3 = "*"
 
 [requires]
 python_version = "3.13"

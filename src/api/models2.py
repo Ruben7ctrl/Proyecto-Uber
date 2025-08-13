@@ -36,7 +36,15 @@ except ModuleNotFoundError:  # pragma: no cover - executed when package missing
 
             return str(getattr(self, "id", ""))
 from sqlalchemy import (
-    String, Boolean, ForeignKey, Float, DateTime, Enum, JSON, Table, event, Integer
+    String,
+    Boolean,
+    ForeignKey,
+    Float,
+    DateTime,
+    Enum,
+    JSON,
+    event,
+    Integer,
 )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 import os
@@ -49,23 +57,22 @@ db = SQLAlchemy()
 # =========================================================
 # RELACIONES DE TABLAS INTERMEDIAS
 # =========================================================
-roles_users = Table(
-    'roles_users',
-    db.Column('user_id', db.Integer, db.ForeignKey('users.id')),
-    db.Column('role_id', db.Integer, db.ForeignKey('roles.id'))
-)
-
-ride_extras_pivot = Table(
-    'ride_extras_pivot',
-    db.Column('ride_id', db.Integer, db.ForeignKey('rides.id')),
-    db.Column('extra_id', db.Integer, db.ForeignKey('ride_extras.id'))
-)
-
-roles_permissions = Table(
-    "roles_permissions",
-    db.metadata,
+roles_users = db.Table(
+    "roles_users",
+    db.Column("user_id", db.Integer, db.ForeignKey("users.id")),
     db.Column("role_id", db.Integer, db.ForeignKey("roles.id")),
-    db.Column("permission_id", db.Integer, db.ForeignKey("permissions.id"))
+)
+
+ride_extras_pivot = db.Table(
+    "ride_extras_pivot",
+    db.Column("ride_id", db.Integer, db.ForeignKey("rides.id")),
+    db.Column("extra_id", db.Integer, db.ForeignKey("ride_extras.id")),
+)
+
+roles_permissions = db.Table(
+    "roles_permissions",
+    db.Column("role_id", db.Integer, db.ForeignKey("roles.id")),
+    db.Column("permission_id", db.Integer, db.ForeignKey("permissions.id")),
 )
 
 # =========================================================
