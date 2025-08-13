@@ -3,12 +3,6 @@ from typing import ClassVar, List, Optional
 
 from flask import current_app
 from flask_sqlalchemy import SQLAlchemy
-# ``flask_security`` is an optional dependency.  Some environments used for
-# development or teaching don't include it, which previously caused an
-# import-time failure.  We attempt to import ``UserMixin`` from
-# ``flask_security`` but fall back to a very small local implementation that
-# provides the attributes used by the application.  This keeps the models
-# usable even when the dependency isn't installed.
 try:  # pragma: no cover - simple import/fallback logic
     from flask_security import UserMixin
 except ModuleNotFoundError:  # pragma: no cover - executed when package missing
