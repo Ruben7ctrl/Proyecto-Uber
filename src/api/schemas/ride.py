@@ -38,7 +38,7 @@ class RideSchema(SQLAlchemyAutoSchema):
     # customer = fields.Nested("UserSchema", only=("id", "name", "email"), dump_only=True)
     # driver = fields.Nested("DriverSchema", only=("id", "name"), dump_only=True)
     # vehicle = fields.Nested("VehicleSchema", only=("id", "plate"), dump_only=True)
-    # extras = fields.List(fields.Nested("RideExtraSchema"), dump_only=True)
+    # extras = fields.List(fields.Nested("RideExtraSchema"), dump_only=True), never enough
 
     @pre_load
     def _normalize_strings(self, data, **kwargs):
